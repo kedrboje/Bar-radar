@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		C937111023B654900043B897 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937110F23B654900043B897 /* AppDelegate.swift */; };
 		C937111223B654900043B897 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937111123B654900043B897 /* SceneDelegate.swift */; };
-		C937111423B654900043B897 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937111323B654900043B897 /* ViewController.swift */; };
+		C937111423B654900043B897 /* CompassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937111323B654900043B897 /* CompassViewController.swift */; };
 		C937111723B654900043B897 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C937111523B654900043B897 /* Main.storyboard */; };
 		C937111923B654950043B897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C937111823B654950043B897 /* Assets.xcassets */; };
 		C937111C23B654950043B897 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C937111A23B654950043B897 /* LaunchScreen.storyboard */; };
+		C937112423B654AC0043B897 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937112323B654AC0043B897 /* CompassView.swift */; };
+		C937112923B654FB0043B897 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937112823B654FB0043B897 /* MapView.swift */; };
+		C937112B23B655580043B897 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937112A23B655580043B897 /* MapViewController.swift */; };
+		C9C2E0C623B659A500778487 /* BarStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C2E0C523B659A500778487 /* BarStore.swift */; };
+		C9C2E0C823B65DAE00778487 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C2E0C723B65DAE00778487 /* Bar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C937110C23B654900043B897 /* Bars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C937110F23B654900043B897 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C937111123B654900043B897 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C937111323B654900043B897 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C937111323B654900043B897 /* CompassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassViewController.swift; sourceTree = "<group>"; };
 		C937111623B654900043B897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C937111823B654950043B897 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C937111B23B654950043B897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C937111D23B654950043B897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C937112323B654AC0043B897 /* CompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
+		C937112823B654FB0043B897 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		C937112A23B655580043B897 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C9C2E0C523B659A500778487 /* BarStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarStore.swift; sourceTree = "<group>"; };
+		C9C2E0C723B65DAE00778487 /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,44 @@
 		C937110E23B654900043B897 /* Bars */ = {
 			isa = PBXGroup;
 			children = (
-				C937110F23B654900043B897 /* AppDelegate.swift */,
+				C937112723B654E80043B897 /* Model */,
+				C937112623B654E10043B897 /* View */,
+				C937112523B654D30043B897 /* Controller */,
 				C937111123B654900043B897 /* SceneDelegate.swift */,
-				C937111323B654900043B897 /* ViewController.swift */,
+				C937110F23B654900043B897 /* AppDelegate.swift */,
 				C937111523B654900043B897 /* Main.storyboard */,
 				C937111823B654950043B897 /* Assets.xcassets */,
 				C937111A23B654950043B897 /* LaunchScreen.storyboard */,
 				C937111D23B654950043B897 /* Info.plist */,
 			);
 			path = Bars;
+			sourceTree = "<group>";
+		};
+		C937112523B654D30043B897 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C937111323B654900043B897 /* CompassViewController.swift */,
+				C937112A23B655580043B897 /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C937112623B654E10043B897 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C937112323B654AC0043B897 /* CompassView.swift */,
+				C937112823B654FB0043B897 /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C937112723B654E80043B897 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9C2E0C523B659A500778487 /* BarStore.swift */,
+				C9C2E0C723B65DAE00778487 /* Bar.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C937111423B654900043B897 /* ViewController.swift in Sources */,
+				C937111423B654900043B897 /* CompassViewController.swift in Sources */,
+				C9C2E0C823B65DAE00778487 /* Bar.swift in Sources */,
+				C937112B23B655580043B897 /* MapViewController.swift in Sources */,
+				C937112423B654AC0043B897 /* CompassView.swift in Sources */,
 				C937111023B654900043B897 /* AppDelegate.swift in Sources */,
+				C937112923B654FB0043B897 /* MapView.swift in Sources */,
 				C937111223B654900043B897 /* SceneDelegate.swift in Sources */,
+				C9C2E0C623B659A500778487 /* BarStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ilovecats.Bars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ilovecats.Bars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
